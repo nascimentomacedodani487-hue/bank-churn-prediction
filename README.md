@@ -1,77 +1,76 @@
-📊 Bank Customer Churn Prediction
-🚀 Project Overview
+# 📊 Bank Customer Churn Prediction
+
+## 🚀 Project Overview
 This project aims to predict customer churn in a banking context using Machine Learning techniques. The main objective is to identify customers with a high probability of leaving the bank, enabling data-driven retention strategies.
 
-The dataset used in this project was obtained from Kaggle:
-🔗 Bank Customer Churn Dataset
+**Dataset Source:** 🔗 [Bank Customer Churn Dataset (Kaggle)](https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn?resource=download)
 
-🖥️ Interactive Business Dashboard
-To complement the machine learning analysis, an interactive web dashboard was developed to provide real-time business insights.
+---
 
-👉 Access the Dashboard here: Bank Churn Analytics - Lovable
+## 🖥️ Interactive Business Dashboard
+To complement the machine learning analysis, an interactive web dashboard was developed to provide real-time business insights. This allows stakeholders to explore data patterns beyond the static model.
 
-💡 Note for Reviewers: To explore the dashboard, simply upload the Customer-Churn-Records.csv file available in this repository. This is the exact same dataset used in the Google Colab notebook (Cell [5]), ensuring full consistency between the predictive model and the visual analysis.
+👉 **[Access the Dashboard here: Bank Churn Analytics - Lovable](https://lovable.dev/projects/0671d6bb-dc25-46ca-b45d-be4f063e4ade?magic_link=mc_3120b031-c20f-47ad-b147-995656e054c9)**
 
-🎯 Business Problem
+> [!TIP]
+> **How to use:** To explore the dashboard, simply upload the `Customer-Churn-Records.csv` file available in this repository. This ensures full consistency between the predictive model and the visual analytics.
+
+---
+
+## 🎯 Business Problem
 Customer churn is one of the most critical challenges in the financial sector. Losing customers directly impacts revenue and long-term growth.
 
-The goal of this project is to:
+**Our main goals:**
+* **Analyze** customer behavior patterns.
+* **Identify** key factors influencing churn.
+* **Build** predictive models to classify customers at risk.
 
-Analyze customer behavior patterns
+---
 
-Identify key factors influencing churn
+## 📂 Dataset
+The dataset contains detailed information about bank customers, including demographic, financial, and behavioral attributes.
 
-Build predictive models to classify customers at risk of leaving
+📥 **File available in this repo:** [`Customer-Churn-Records.csv`](./Customer-Churn-Records.csv)  
+*Note: Use this file to reproduce the analysis in the notebook (cell [5]) or to power the Interactive Dashboard.*
 
-📂 Dataset
-The dataset used in this project contains detailed information about bank customers, including demographic, financial, and behavioral attributes.
+---
 
-📥 The file used in this project is available in this repository:
-
-👉 Customer-Churn-Records.csv
-
-You can download it directly from the repository and use it to reproduce the analysis in the notebook (cell [5]) or to power the Interactive Dashboard.
-
-🧠 Methodology
+## 🧠 Methodology
 The project follows a complete data science pipeline:
+1.  **Exploratory Data Analysis (EDA)**
+2.  **Data Cleaning and Preprocessing**
+3.  **Feature Engineering**
+4.  **Leakage Detection:** Identification and removal of data leakage.
+5.  **Model Training & Evaluation**
 
-Exploratory Data Analysis (EDA)
+---
 
-Data Cleaning and Preprocessing
+## 🤖 Machine Learning Models
+Two models were implemented and compared to find the best fit for this business case:
+* **Logistic Regression:** Used as the baseline performance.
+* **Random Forest Classifier:** Best performance in identifying at-risk customers.
 
-Feature Engineering
+---
 
-Detection and removal of data leakage
+## 📈 Results
+* **Random Forest** showed superior capability in capturing customers likely to leave, making it the most suitable model for retention strategies.
+* The model prioritizes **Recall**, ensuring that the bank doesn't miss potential churn cases.
 
-Model training and evaluation
+---
 
-🤖 Machine Learning Models
-Two models were implemented and compared:
+## 💡 Key Insights
+* **Complaints:** Customers with past complaints showed a high correlation with churn.
+* **Activity:** Active members are significantly less likely to leave the bank.
+* **Demographics:** Age and the number of products used are the strongest behavioral influencers.
 
-Logistic Regression
+---
 
-Random Forest Classifier
+## 🛠️ Tech Stack
+* **Data Science:** Python (Pandas, NumPy, Scikit-learn)
+* **Visualization:** Matplotlib, Seaborn
+* **Deployment:** Lovable (React/Tailwind)
 
-📈 Results
-Logistic Regression: baseline performance
+---
 
-Random Forest: better performance in identifying churn customers
-
-The Random Forest model showed superior capability in capturing customers at risk of leaving, making it more suitable for retention strategies.
-
-💡 Key Insights
-Customers with complaints had strong correlation with churn (data leakage removed)
-
-Active customers are less likely to leave the bank
-
-Age and number of products significantly influence churn behavior
-
-🛠️ Tech Stack
-Data Science: Python, Pandas, NumPy, Scikit-learn
-
-Visualization: Matplotlib, Seaborn
-
-Deployment & Dashboard: Lovable (React/Tailwind)
-
-🚀 Conclusion
-This project demonstrates an end-to-end machine learning workflow applied to a real-world business problem. It highlights the importance of data quality, feature selection, and model evaluation in building reliable predictive systems for business decision-making.
+## 🚀 Conclusion
+This project demonstrates an end-to-end machine learning workflow applied to a real-world business problem. It highlights the importance of data quality, feature selection, and model evaluation in building reliable systems for high-stakes business decision-making.
